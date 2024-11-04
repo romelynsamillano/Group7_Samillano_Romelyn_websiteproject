@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NikNok Pet Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <h1>Niknok Pet Shop</h1>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home">
+        <div class="hero">
+            <h2>Welcome to NikNok Pet Shop</h2>
+            <p>Find everything your pet needs!</p>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="shop">
+        <h2>Shop Our Products</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="https://i.huffpost.com/gen/1339922/images/o-DOG-FOOD-facebook.jpg" alt="Dog Food">
+                <h3>Dog Food</h3>
+                <p>175.00</p>
+                <button onclick="addToCart('Premium Dog Food', 25)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.LxDpXUnslPJaXt1LWnUvzwAAAA&pid=Api&P=0&h=180" alt="Cat Toy">
+                <h3>Cat Toy</h3>
+                <p>75.00</p>
+                <button onclick="addToCart('Cat Toy', 10)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/81Un5UTCRFL.jpg" alt="Bird Cage">
+                <h3>Bird Cage</h3>
+                <p>220.00</p>
+                <button onclick="addToCart('Bird Cage', 50)">Add to Cart</button>
+            </div>
+            <!-- Add more products as needed -->
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Grooming</li>
+            <li>Veterinary Care</li>
+            <li>Pet Training</li>
+        </ul>
+    </section>
+
+
+    
+    <!-- Cart Section -->
+    <section id="cart">
+        <h2>Shopping Cart</h2>
+        <div id="cart-items">
+            <!-- Cart items will be displayed here -->
+        </div>
+        <p id="cart-total">Total: $0.00</p>
+    </section>
+    
+
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Lia's Pet Shop is your go-to for top-quality pet products and friendly advice. Visit us for the best for your furry friends!</p>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Pet Shop. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
