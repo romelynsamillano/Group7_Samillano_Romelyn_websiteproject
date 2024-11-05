@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lia's Pet Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <h1>Lia's Pet Shop</h1>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home">
+        <div class="hero">
+            <h2>Welcome to Lia's Pet Shop</h2>
+            <p>Find everything your pet needs!</p>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="shop">
+        <h2>Shop Our Products</h2>
+        <div class="product-grid" id="product-list"></div>
+        <div id="cart">
+            <h3>Your Cart</h3>
+            <div id="cart-items"></div>
+            <p>Total: ₱<span id="total-price">0</span></p>
+        </div>
+    </section>
+
+   <!-- Services Section -->
+<section id="services">
+    <h2>Our Services</h2>
+    <div class="service-grid">
+        <div class="service-card">
+            <img src="https://tailoredpetservices.com/wp-content/uploads/2015/09/09-17-15-Dog-Groomers.jpg" alt="Grooming Service">
+            <h3>Grooming</h3>
+            <p>Professional grooming to keep your pets looking their best.</p>
+        </div>
+        <div class="service-card">
+            <img src="https://az505806.vo.msecnd.net/cms/59c63bc8-f4bc-4517-a0bf-7ff0e20280c8/23c59995-e4ce-4ff2-8662-ef9b10d421d1.jpg" alt="Veterinary Care">
+            <h3>Veterinary Care</h3>
+            <p>Comprehensive medical care to ensure your pet's health.</p>
+        </div>
+        <div class="service-card">
+            <img src="https://www.sciencefriday.com/wp-content/uploads/2016/09/shutterstock_342681401.jpg" alt="Pet Training">
+            <h3>Pet Training</h3>
+            <p>Training sessions to help your pets learn and behave well.</p>
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <h2>About Lia's Pet Shop</h2>
+    
+    <div class="about-content">
+        <div class="about-section">
+            <h3>Our Story</h3>
+            <p>
+                Founded in 2020, Lia’s Pet Shop was born from a passion for pets and the desire to create a friendly, trustworthy place for pet lovers. What started as a small neighborhood store has now grown into a vibrant community for pet owners, offering everything from high-quality products to expert pet care advice.
+            </p>
+        </div>
+        
+        <div class="about-section">
+            <h3>Our Mission</h3>
+            <p>
+                Our mission is to enhance the lives of pets and their owners by providing top-quality products and services. We believe that every pet deserves the best, so we carefully select all our products and only work with trusted suppliers to ensure safety, comfort, and happiness for your beloved companions.
+            </p>
+        </div>
+        
+        <div class="about-section">
+            <h3>Our Values</h3>
+            <ul>
+                <li><strong>Quality:</strong> We prioritize the best for your pets, from nutritious food to durable toys.</li>
+                <li><strong>Care:</strong> Every pet that walks into Lia’s Pet Shop is treated like family.</li>
+                <li><strong>Community:</strong> We support local pet rescues and encourage responsible pet ownership.</li>
+                <li><strong>Expertise:</strong> Our staff is trained to provide guidance on pet health, grooming, and training.</li>
+            </ul>
+        </div>
+        
+        <div class="about-section">
+            <h3>Meet Our Team</h3>
+            <p>
+                Our team is made up of passionate pet lovers with years of experience in pet care. Each member is dedicated to offering personalized advice to make sure you find the perfect products and services for your pets. Whether you need help choosing a diet, finding the right toy, or scheduling a grooming session, our team is here to assist.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <form action="process_contact.php" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+</section>
+
+ 
+    <!-- Flavor Selection Modal -->
+    <div id="flavor-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">&times;</span>
+            <h2>Select a Flavor</h2>
+            <div id="flavor-options"></div>
+            <button id="confirm-selection" onclick="addToCartWithFlavor()">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Lia's Pet Shop. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
